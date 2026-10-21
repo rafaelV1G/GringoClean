@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GringoClean | Higienização de Estofados</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header class="header">
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                <span>Gringo</span>Clean
+            </a>
+
+            <nav class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <a href="#contato" class="btn btn-small">
+                Solicitar orçamento
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content container">
+
+                <div class="hero-text">
+
+                    <span class="tag">
+                        HIGIENIZAÇÃO PROFISSIONAL
+                    </span>
+
+                    <h1>
+                        Seu estofado limpo,
+                        <span>renovado</span> e bem cuidado.
+                    </h1>
+
+                    <p>
+                        Higienização profunda de sofás, colchões,
+                        poltronas, cadeiras e outros estofados.
+                        Removemos sujeiras, manchas e odores
+                        com equipamentos profissionais.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#contato" class="btn">
+                            Quero um orçamento
+                        </a>
+
+                        <a href="#servicos" class="btn-outline">
+                            Conhecer serviços
+                        </a>
+
+                    </div>
+
+                    <div class="hero-info">
+
+                        <div>
+                            <strong>✓</strong>
+                            Atendimento profissional
+                        </div>
+
+                        <div>
+                            <strong>✓</strong>
+                            Equipamentos extratores
+                        </div>
+
+                        <div>
+                            <strong>✓</strong>
+                            Higienização profunda
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <div class="image-decoration"></div>
+
+                    <img
+                        src="https://a-static.mlcdn.com.br/800x600/limpadora-extratora-de-estofados-puzzi-4-16-1600-watts-16-litros-220-volts-11002710-karcher/copafer/39919/fbcb3b3f95fd25e3a94cb3aef17d4137.jpeg"
+                        alt="Profissional realizando limpeza de colchão com extratora">
+
+                    <div class="image-card">
+
+                        <div class="check">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Limpeza profunda</strong>
+                            <small>Colchões e estofados</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+        <section class="services" id="servicos">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>O QUE FAZEMOS</span>
+
+                    <h2>
+                        Higienização para diferentes tipos de estofados
+                    </h2>
+
+                    <p>
+                        Cuidamos dos seus estofados com produtos
+                        e equipamentos adequados para uma limpeza eficiente.
+                    </p>
+
+                </div>
+
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            🛋️
+                        </div>
+
+                        <h3>Limpeza de Sofás</h3>
+
+                        <p>
+                            Higienização profunda para remover sujeiras,
+                            manchas e odores acumulados no tecido.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card featured">
+
+                        <div class="service-icon">
+                            🛏️
+                        </div>
+
+                        <h3>Limpeza de Colchões</h3>
+
+                        <p>
+                            Limpeza com máquina extratora para ajudar
+                            a remover sujeiras e resíduos presentes no tecido.
+                        </p>
+
+                        <span class="featured-label">
+                            MAIS PROCURADO
+                        </span>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            💺
+                        </div>
+
+                        <h3>Poltronas e Cadeiras</h3>
+
+                        <p>
+                            Higienização de cadeiras, poltronas e outros
+                            estofados residenciais ou comerciais.
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            🚗
+                        </div>
+
+                        <h3>Bancos de Carro</h3>
+
+                        <p>
+                            Limpeza de bancos e partes estofadas
+                            do interior do veículo.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO FUNCIONA -->
+        <section class="process">
+
+            <div class="container">
+
+                <div class="section-title light">
+
+                    <span>COMO FUNCIONA</span>
+
+                    <h2>
+                        Do seu pedido ao estofado renovado
+                    </h2>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <div class="process-item">
+
+                        <div class="number">
+                            01
+                        </div>
+
+                        <h3>Você entra em contato</h3>
+
+                        <p>
+                            Envie uma mensagem e conte qual estofado
+                            precisa de limpeza.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <div class="number">
+                            02
+                        </div>
+
+                        <h3>Avaliamos o serviço</h3>
+
+                        <p>
+                            Verificamos o tipo de tecido e as condições
+                            do estofado para definir o melhor procedimento.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <div class="number">
+                            03
+                        </div>
+
+                        <h3>Realizamos a higienização</h3>
+
+                        <p>
+                            Utilizamos produtos e equipamento extrator
+                            para realizar a limpeza.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <div class="number">
+                            04
+                        </div>
+
+                        <h3>Você confere o resultado</h3>
+
+                        <p>
+                            Seu estofado recebe o cuidado necessário
+                            para ficar muito mais limpo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="about" id="sobre">
+
+            <div class="container about-grid">
+
+                <div class="about-image">
+
+                    <img
+                        src="https://www.jasacucikarpetcirebon.com/assets/uploads/artikel/cuci_springbed_neon_1772647795041.png"
+                        alt="Limpeza profissional de colchão">
+
+                </div>
+
+
+                <div class="about-text">
+
+                    <span class="tag">
+                        GRINGOCLEAN
+                    </span>
+
+                    <h2>
+                        Limpeza que você consegue ver.
+                    </h2>
+
+                    <p>
+                        Na GringoClean, trabalhamos com higienização
+                        de estofados utilizando equipamentos extratores
+                        para realizar uma limpeza mais profunda.
+                    </p>
+
+                    <p>
+                        Nosso objetivo é cuidar dos seus estofados
+                        com atenção, praticidade e um serviço de qualidade.
+                    </p>
+
+
+                    <div class="about-list">
+
+                        <div>
+                            <span>✓</span>
+                            Equipamentos profissionais
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Produtos adequados
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Atendimento personalizado
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Cuidado com seu estofado
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta" id="contato">
+
+            <div class="container cta-content">
+
+                <div>
+
+                    <span>
+                        PRECISA DE UMA LIMPEZA?
+                    </span>
+
+                    <h2>
+                        Deixe seu estofado
+                        com cara de novo.
+                    </h2>
+
+                    <p>
+                        Entre em contato com a GringoClean
+                        e solicite seu orçamento.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://wa.me/5500000000000"
+                    target="_blank"
+                    class="btn whatsapp"
+                >
+                    💬 Falar pelo WhatsApp
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="logo">
+                <span>Gringo</span>Clean
+            </div>
+
+            <p>
+                Higienização profissional de estofados.
+            </p>
+
+            <p class="copyright">
+                © 2026 GringoClean. Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
