@@ -1,444 +1,1444 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+:root {
+    --blue: #0758a8;
+    --blue-dark: #062d54;
+    --blue-deep: #082f5b;
+    --orange: #f3a000;
+    --green: #20a765;
 
-    <title>GringoClean | Higienização de Estofados</title>
+    --ink: #10243c;
+    --muted: #6c7d91;
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    --bg: #f7f9fc;
+    --white: #ffffff;
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    --line: #dce5ef;
 
-<body>
+    --shadow: 0 25px 70px rgba(10, 50, 90, 0.12);
+}
 
-    <!-- MENU -->
-    <header class="header">
-        <div class="container nav">
 
-            <a href="#" class="logo">
-                <span>Gringo</span>Clean
-            </a>
+/* ================= RESET ================= */
 
-            <nav class="menu">
-                <a href="#inicio">Início</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
+* {
+    box-sizing: border-box;
+}
 
-            <a href="#contato" class="btn btn-small">
-                Solicitar orçamento
-            </a>
+html {
+    scroll-behavior: smooth;
+}
 
-        </div>
-    </header>
+body {
+    margin: 0;
 
+    background: var(--bg);
 
-    <!-- HERO -->
-    <main>
+    color: var(--ink);
 
-        <section class="hero" id="inicio">
+    font-family:
+        "DM Sans",
+        Arial,
+        sans-serif;
 
-            <div class="hero-content container">
+    line-height: 1.55;
+}
 
-                <div class="hero-text">
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-                    <span class="tag">
-                        HIGIENIZAÇÃO PROFISSIONAL
-                    </span>
+button,
+input,
+select {
+    font: inherit;
+}
 
-                    <h1>
-                        Seu estofado limpo,
-                        <span>renovado</span> e bem cuidado.
-                    </h1>
+button {
+    cursor: pointer;
+}
 
-                    <p>
-                        Higienização profunda de sofás, colchões,
-                        poltronas, cadeiras e outros estofados.
-                        Removemos sujeiras, manchas e odores
-                        com equipamentos profissionais.
-                    </p>
+img {
+    max-width: 100%;
+}
 
-                    <div class="hero-buttons">
 
-                        <a href="#contato" class="btn">
-                            Quero um orçamento
-                        </a>
+/* ================= CONTAINER ================= */
 
-                        <a href="#servicos" class="btn-outline">
-                            Conhecer serviços
-                        </a>
+.container {
+    width: min(1220px, calc(100% - 60px));
 
-                    </div>
+    margin: auto;
+}
 
-                    <div class="hero-info">
 
-                        <div>
-                            <strong>✓</strong>
-                            Atendimento profissional
-                        </div>
+/* ================= HEADER ================= */
 
-                        <div>
-                            <strong>✓</strong>
-                            Equipamentos extratores
-                        </div>
+.header {
+    height: 82px;
 
-                        <div>
-                            <strong>✓</strong>
-                            Higienização profunda
-                        </div>
+    background: rgba(255, 255, 255, 0.95);
 
-                    </div>
+    border-bottom: 1px solid var(--line);
 
-                </div>
+    backdrop-filter: blur(14px);
 
+    position: sticky;
 
-                <div class="hero-image">
+    top: 0;
 
-                    <div class="image-decoration"></div>
+    z-index: 50;
+}
 
-                    <img
-                        src="https://a-static.mlcdn.com.br/800x600/limpadora-extratora-de-estofados-puzzi-4-16-1600-watts-16-litros-220-volts-11002710-karcher/copafer/39919/fbcb3b3f95fd25e3a94cb3aef17d4137.jpeg"
-                        alt="Profissional realizando limpeza de colchão com extratora">
+.nav-container {
+    height: 100%;
 
-                    <div class="image-card">
+    display: flex;
 
-                        <div class="check">
-                            ✓
-                        </div>
+    align-items: center;
 
-                        <div>
-                            <strong>Limpeza profunda</strong>
-                            <small>Colchões e estofados</small>
-                        </div>
+    justify-content: space-between;
+}
 
-                    </div>
 
-                </div>
+/* LOGO */
 
-            </div>
+.logo {
+    display: flex;
 
-        </section>
+    align-items: center;
 
+    gap: 10px;
+}
 
-        <!-- SERVIÇOS -->
-        <section class="services" id="servicos">
+.logo-icon {
+    width: 44px;
+    height: 44px;
 
-            <div class="container">
+    display: grid;
 
-                <div class="section-title">
+    place-items: center;
 
-                    <span>O QUE FAZEMOS</span>
+    background: var(--blue);
 
-                    <h2>
-                        Higienização para diferentes tipos de estofados
-                    </h2>
+    color: white;
 
-                    <p>
-                        Cuidamos dos seus estofados com produtos
-                        e equipamentos adequados para uma limpeza eficiente.
-                    </p>
+    border-radius: 13px;
 
-                </div>
+    font: 800 21px Manrope;
 
+    box-shadow:
+        0 8px 20px
+        rgba(7, 88, 168, 0.2);
+}
 
-                <div class="services-grid">
+.logo-text strong {
+    display: block;
 
-                    <article class="service-card">
+    color: var(--blue-dark);
 
-                        <div class="service-icon">
-                            🛋️
-                        </div>
+    font: 800 23px Manrope;
 
-                        <h3>Limpeza de Sofás</h3>
+    letter-spacing: -1px;
 
-                        <p>
-                            Higienização profunda para remover sujeiras,
-                            manchas e odores acumulados no tecido.
-                        </p>
+    line-height: 1;
+}
 
-                    </article>
+.logo-text strong span {
+    color: var(--orange);
+}
 
+.logo-text small {
+    display: block;
 
-                    <article class="service-card featured">
+    margin-top: 5px;
 
-                        <div class="service-icon">
-                            🛏️
-                        </div>
+    color: #718198;
 
-                        <h3>Limpeza de Colchões</h3>
+    font-size: 8px;
 
-                        <p>
-                            Limpeza com máquina extratora para ajudar
-                            a remover sujeiras e resíduos presentes no tecido.
-                        </p>
+    font-weight: 900;
 
-                        <span class="featured-label">
-                            MAIS PROCURADO
-                        </span>
+    letter-spacing: 2px;
+}
 
-                    </article>
 
+/* NAV */
 
-                    <article class="service-card">
+nav {
+    display: flex;
 
-                        <div class="service-icon">
-                            💺
-                        </div>
+    align-items: center;
 
-                        <h3>Poltronas e Cadeiras</h3>
+    gap: 29px;
 
-                        <p>
-                            Higienização de cadeiras, poltronas e outros
-                            estofados residenciais ou comerciais.
-                        </p>
+    color: #52667e;
 
-                    </article>
+    font-size: 12px;
 
+    font-weight: 800;
+}
 
-                    <article class="service-card">
+nav a {
+    transition: 0.2s;
+}
 
-                        <div class="service-icon">
-                            🚗
-                        </div>
+nav a:hover {
+    color: var(--blue);
+}
 
-                        <h3>Bancos de Carro</h3>
+.nav-cta {
+    padding: 12px 19px;
 
-                        <p>
-                            Limpeza de bancos e partes estofadas
-                            do interior do veículo.
-                        </p>
+    border-radius: 999px;
 
-                    </article>
+    background: var(--blue);
 
-                </div>
+    color: white !important;
 
-            </div>
+    box-shadow:
+        0 8px 22px
+        rgba(7, 88, 168, 0.22);
+}
 
-        </section>
+.menu-button {
+    display: none;
 
+    border: 0;
 
-        <!-- COMO FUNCIONA -->
-        <section class="process">
+    background: none;
 
-            <div class="container">
+    color: var(--blue);
 
-                <div class="section-title light">
+    font-size: 28px;
+}
 
-                    <span>COMO FUNCIONA</span>
 
-                    <h2>
-                        Do seu pedido ao estofado renovado
-                    </h2>
+/* ================= HERO ================= */
 
-                </div>
+.hero {
+    padding: 85px 0 75px;
 
+    overflow: hidden;
+}
 
-                <div class="process-grid">
+.hero-grid {
+    display: grid;
 
-                    <div class="process-item">
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
 
-                        <div class="number">
-                            01
-                        </div>
+    gap: 70px;
 
-                        <h3>Você entra em contato</h3>
+    align-items: center;
+}
 
-                        <p>
-                            Envie uma mensagem e conte qual estofado
-                            precisa de limpeza.
-                        </p>
+.eyebrow {
+    color: var(--blue);
 
-                    </div>
+    font-size: 10px;
 
+    font-weight: 900;
 
-                    <div class="process-item">
+    letter-spacing: 2.5px;
+}
 
-                        <div class="number">
-                            02
-                        </div>
+.eyebrow > span {
+    display: inline-block;
 
-                        <h3>Avaliamos o serviço</h3>
+    width: 8px;
+    height: 8px;
 
-                        <p>
-                            Verificamos o tipo de tecido e as condições
-                            do estofado para definir o melhor procedimento.
-                        </p>
+    background: var(--orange);
 
-                    </div>
+    border-radius: 50%;
 
+    margin-right: 7px;
+}
 
-                    <div class="process-item">
+.hero h1 {
+    margin: 17px 0;
 
-                        <div class="number">
-                            03
-                        </div>
+    color: var(--blue-deep);
 
-                        <h3>Realizamos a higienização</h3>
+    font: 800 clamp(44px, 5vw, 69px) / 1.02 Manrope;
 
-                        <p>
-                            Utilizamos produtos e equipamento extrator
-                            para realizar a limpeza.
-                        </p>
+    letter-spacing: -3px;
+}
 
-                    </div>
+.hero h1 em,
+.section-heading h2 em,
+.mattress-content h2 em,
+.about-content h2 em {
+    color: var(--orange);
 
+    font-style: normal;
+}
 
-                    <div class="process-item">
+.hero-description {
+    max-width: 590px;
 
-                        <div class="number">
-                            04
-                        </div>
+    color: var(--muted);
 
-                        <h3>Você confere o resultado</h3>
+    font-size: 17px;
+}
 
-                        <p>
-                            Seu estofado recebe o cuidado necessário
-                            para ficar muito mais limpo.
-                        </p>
 
-                    </div>
+/* BUTTONS */
 
-                </div>
+.hero-buttons {
+    display: flex;
 
-            </div>
+    gap: 12px;
 
-        </section>
+    margin-top: 28px;
 
+    flex-wrap: wrap;
+}
 
-        <!-- SOBRE -->
-        <section class="about" id="sobre">
+.button {
+    display: inline-flex;
 
-            <div class="container about-grid">
+    align-items: center;
 
-                <div class="about-image">
+    justify-content: center;
 
-                    <img
-                        src="https://www.jasacucikarpetcirebon.com/assets/uploads/artikel/cuci_springbed_neon_1772647795041.png"
-                        alt="Limpeza profissional de colchão">
+    gap: 10px;
 
-                </div>
+    padding: 13px 18px;
 
+    border-radius: 11px;
 
-                <div class="about-text">
+    font-size: 11px;
 
-                    <span class="tag">
-                        GRINGOCLEAN
-                    </span>
+    font-weight: 900;
 
-                    <h2>
-                        Limpeza que você consegue ver.
-                    </h2>
+    border: 0;
 
-                    <p>
-                        Na GringoClean, trabalhamos com higienização
-                        de estofados utilizando equipamentos extratores
-                        para realizar uma limpeza mais profunda.
-                    </p>
+    transition: 0.22s;
+}
 
-                    <p>
-                        Nosso objetivo é cuidar dos seus estofados
-                        com atenção, praticidade e um serviço de qualidade.
-                    </p>
+.button span {
+    font-size: 17px;
+}
 
+.button:hover {
+    transform: translateY(-2px);
+}
 
-                    <div class="about-list">
+.button-primary {
+    background: var(--blue);
 
-                        <div>
-                            <span>✓</span>
-                            Equipamentos profissionais
-                        </div>
+    color: white;
 
-                        <div>
-                            <span>✓</span>
-                            Produtos adequados
-                        </div>
+    box-shadow:
+        0 12px 25px
+        rgba(7, 88, 168, 0.2);
+}
 
-                        <div>
-                            <span>✓</span>
-                            Atendimento personalizado
-                        </div>
+.button-secondary {
+    background: white;
 
-                        <div>
-                            <span>✓</span>
-                            Cuidado com seu estofado
-                        </div>
+    color: var(--blue);
 
-                    </div>
+    border: 1px solid var(--line);
+}
 
-                </div>
+.button-white {
+    background: white;
 
-            </div>
+    color: var(--blue);
+}
 
-        </section>
 
+/* BENEFÍCIOS */
 
-        <!-- CTA -->
-        <section class="cta" id="contato">
+.hero-benefits {
+    margin-top: 25px;
 
-            <div class="container cta-content">
+    display: flex;
 
-                <div>
+    flex-wrap: wrap;
 
-                    <span>
-                        PRECISA DE UMA LIMPEZA?
-                    </span>
+    gap: 16px;
+}
 
-                    <h2>
-                        Deixe seu estofado
-                        com cara de novo.
-                    </h2>
+.hero-benefits div {
+    display: flex;
 
-                    <p>
-                        Entre em contato com a GringoClean
-                        e solicite seu orçamento.
-                    </p>
+    align-items: center;
 
-                </div>
+    gap: 6px;
 
+    color: #697a8e;
 
-                <a
-                    href="https://wa.me/5500000000000"
-                    target="_blank"
-                    class="btn whatsapp"
-                >
-                    💬 Falar pelo WhatsApp
-                </a>
+    font-size: 10px;
 
-            </div>
+    font-weight: 700;
+}
 
-        </section>
+.hero-benefits strong {
+    color: var(--green);
+}
 
-    </main>
 
+/* HERO IMAGE */
 
-    <!-- RODAPÉ -->
-    <footer>
+.hero-image-area {
+    height: 560px;
 
-        <div class="container footer-content">
+    position: relative;
+}
 
-            <div class="logo">
-                <span>Gringo</span>Clean
-            </div>
+.image-decoration {
+    position: absolute;
 
-            <p>
-                Higienização profissional de estofados.
-            </p>
+    width: 360px;
+    height: 360px;
 
-            <p class="copyright">
-                © 2026 GringoClean. Todos os direitos reservados.
-            </p>
+    right: -40px;
+    top: 20px;
 
-        </div>
+    border-radius: 50%;
 
-    </footer>
+    background: #e8f1fa;
+}
 
+.hero-image {
+    position: absolute;
 
-    <script src="script.js"></script>
+    inset: 0 0 40px 50px;
 
-</body>
-</html>
+    padding: 8px;
+
+    background: white;
+
+    border-radius: 29px;
+
+    box-shadow: var(--shadow);
+
+    transform: rotate(1.3deg);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+}
+
+.floating-card {
+    position: absolute;
+
+    left: 0;
+    bottom: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px 17px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: var(--shadow);
+}
+
+.check-icon {
+    width: 39px;
+    height: 39px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 11px;
+
+    background: #e6f7ee;
+
+    color: var(--green);
+
+    font-weight: 900;
+}
+
+.floating-card strong,
+.floating-card small {
+    display: block;
+}
+
+.floating-card strong {
+    font-size: 11px;
+}
+
+.floating-card small {
+    color: var(--muted);
+
+    font-size: 9px;
+
+    margin-top: 3px;
+}
+
+
+/* ================= NUMBERS ================= */
+
+.numbers {
+    background: white;
+
+    border-top: 1px solid var(--line);
+
+    border-bottom: 1px solid var(--line);
+}
+
+.numbers-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.numbers-grid > div {
+    padding: 27px 15px;
+
+    text-align: center;
+
+    border-right: 1px solid var(--line);
+}
+
+.numbers-grid > div:last-child {
+    border: 0;
+}
+
+.numbers strong {
+    display: block;
+
+    color: var(--blue);
+
+    font: 800 28px Manrope;
+}
+
+.numbers span {
+    color: var(--muted);
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* ================= SECTION ================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 40px;
+
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    margin: 9px 0 0;
+
+    color: var(--blue-deep);
+
+    font: 800 clamp(34px, 4.2vw, 52px) / 1.05 Manrope;
+
+    letter-spacing: -2px;
+}
+
+.section-heading > p {
+    max-width: 420px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+    background: #f4f7fb;
+}
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 17px;
+}
+
+.service-card {
+    background: white;
+
+    border: 1px solid var(--line);
+
+    border-radius: 21px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px
+        rgba(10, 50, 90, 0.05);
+
+    transition: 0.25s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: var(--shadow);
+}
+
+.service-image {
+    height: 215px;
+
+    position: relative;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.service-image > span {
+    position: absolute;
+
+    top: 13px;
+    left: 13px;
+
+    width: 31px;
+    height: 31px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: var(--blue);
+
+    font-size: 10px;
+
+    font-weight: 900;
+}
+
+.service-content {
+    padding: 21px;
+}
+
+.service-icon {
+    width: 37px;
+    height: 37px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-top: -39px;
+
+    position: relative;
+
+    border-radius: 11px;
+
+    background: var(--orange);
+
+    color: white;
+
+    font-weight: 900;
+}
+
+.service-content h3 {
+    margin: 15px 0 7px;
+
+    color: var(--blue-deep);
+
+    font: 700 18px Manrope;
+}
+
+.service-content p {
+    min-height: 72px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+.service-button {
+    margin-top: 16px;
+
+    padding: 0;
+
+    border: 0;
+
+    background: none;
+
+    color: var(--blue);
+
+    font-size: 11px;
+
+    font-weight: 900;
+}
+
+.service-button span {
+    margin-left: 4px;
+
+    color: var(--orange);
+
+    font-size: 15px;
+}
+
+
+/* ================= MATTRESS ================= */
+
+.mattress-section {
+    padding: 105px 0;
+
+    background: white;
+}
+
+.mattress-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.mattress-image {
+    height: 520px;
+
+    position: relative;
+}
+
+.mattress-image > img {
+    width: 90%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 28px;
+
+    box-shadow: var(--shadow);
+}
+
+.equipment-card {
+    position: absolute;
+
+    right: 0;
+
+    bottom: 35px;
+
+    width: 245px;
+
+    padding: 17px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow: var(--shadow);
+}
+
+.equipment-card strong,
+.equipment-card span {
+    display: block;
+}
+
+.equipment-card strong {
+    color: var(--blue);
+
+    font-size: 12px;
+}
+
+.equipment-card span {
+    margin-top: 4px;
+
+    color: var(--muted);
+
+    font-size: 9px;
+}
+
+.mattress-content h2 {
+    margin: 10px 0 19px;
+
+    color: var(--blue-deep);
+
+    font: 800 clamp(34px, 4vw, 51px) / 1.05 Manrope;
+
+    letter-spacing: -2px;
+}
+
+.mattress-content > p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+.mattress-list {
+    margin: 25px 0;
+
+    display: grid;
+
+    gap: 11px;
+}
+
+.mattress-list div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+.mattress-list span {
+    width: 25px;
+    height: 25px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #e7f7ef;
+
+    color: var(--green);
+
+    font-size: 11px;
+
+    font-weight: 900;
+}
+
+.mattress-list p {
+    margin: 0;
+
+    color: #51647b;
+
+    font-size: 11px;
+}
+
+
+/* ================= PROCESSO ================= */
+
+.process {
+    background: var(--bg);
+}
+
+.center {
+    display: block;
+
+    text-align: center;
+}
+
+.center > div {
+    max-width: 700px;
+
+    margin: auto;
+}
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 55px 1fr 55px 1fr;
+
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+.process-step {
+    text-align: center;
+
+    position: relative;
+}
+
+.process-step > span {
+    position: absolute;
+
+    top: -14px;
+    right: 15px;
+
+    color: #b9c9da;
+
+    font-size: 9px;
+
+    font-weight: 900;
+}
+
+.process-icon {
+    width: 65px;
+    height: 65px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin: auto;
+
+    border-radius: 20px;
+
+    background: white;
+
+    color: var(--blue);
+
+    border: 1px solid var(--line);
+
+    box-shadow: 0 10px 30px rgba(10, 50, 90, 0.06);
+
+    font-weight: 900;
+}
+
+.process-step h3 {
+    margin: 17px 0 5px;
+
+    color: var(--blue-deep);
+
+    font: 700 16px Manrope;
+}
+
+.process-step p {
+    margin: auto;
+
+    max-width: 220px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+}
+
+.process-line {
+    height: 1px;
+
+    background: var(--line);
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    background: white;
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.about-content h2 {
+    margin: 10px 0 20px;
+
+    color: var(--blue-deep);
+
+    font: 800 clamp(34px, 4vw, 51px) / 1.05 Manrope;
+
+    letter-spacing: -2px;
+}
+
+.about-content > p {
+    color: var(--muted);
+
+    font-size: 14px;
+}
+
+.about-points {
+    margin-top: 25px;
+
+    display: grid;
+
+    gap: 11px;
+}
+
+.about-points div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #53667c;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.about-points strong {
+    color: var(--green);
+}
+
+.about-image {
+    height: 500px;
+
+    position: relative;
+}
+
+.about-image > img {
+    width: 92%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 28px;
+}
+
+.about-label {
+    position: absolute;
+
+    right: 0;
+    bottom: 35px;
+
+    padding: 17px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: var(--shadow);
+}
+
+.about-label strong,
+.about-label span {
+    display: block;
+}
+
+.about-label strong {
+    color: var(--blue);
+
+    font: 800 18px Manrope;
+}
+
+.about-label span {
+    color: var(--muted);
+
+    font-size: 9px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+    padding: 0 0 90px;
+
+    background: white;
+}
+
+.cta-box {
+    padding: 48px 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    border-radius: 27px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #0758a8,
+            #082f5b
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(7, 88, 168, 0.2);
+}
+
+.eyebrow.light {
+    color: #ffc75d;
+}
+
+.cta h2 {
+    max-width: 680px;
+
+    margin: 8px 0;
+
+    color: white;
+
+    font: 800 clamp(28px, 3.5vw, 43px) / 1.06 Manrope;
+
+    letter-spacing: -1px;
+}
+
+.cta p {
+    margin: 0;
+
+    color: #c7d9eb;
+
+    font-size: 13px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 60px 0 25px;
+
+    background: #061d37;
+
+    color: #aec2d8;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 0.8fr 0.8fr 0.8fr;
+
+    gap: 45px;
+}
+
+.footer-brand .logo-text strong {
+    color: white;
+}
+
+.footer-brand p {
+    max-width: 300px;
+
+    margin-top: 18px;
+
+    color: #91a9c1;
+
+    font-size: 11px;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    font-size: 10px;
+}
+
+.footer-column > strong {
+    color: white;
+
+    margin-bottom: 5px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+
+    padding-top: 22px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+    color: #718aa5;
+
+    font-size: 9px;
+}
+
+
+/* ================= MODAL ================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 100;
+
+    place-items: center;
+
+    padding: 20px;
+
+    background: rgba(3, 17, 34, 0.72);
+
+    backdrop-filter: blur(5px);
+}
+
+.modal.open {
+    display: grid;
+}
+
+.modal-box {
+    width: min(480px, 100%);
+
+    padding: 35px;
+
+    position: relative;
+
+    background: white;
+
+    border-radius: 23px;
+
+    box-shadow:
+        0 35px 90px
+        rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    border: 0;
+
+    background: none;
+
+    color: #8191a4;
+
+    font-size: 29px;
+}
+
+.modal-box h2 {
+    margin: 9px 0;
+
+    color: var(--blue-deep);
+
+    font: 800 28px Manrope;
+}
+
+.modal-box p {
+    margin-bottom: 25px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        left: 0;
+        right: 0;
+        top: 82px;
+
+        padding: 20px 30px;
+
+        background: white;
+
+        border-bottom: 1px solid var(--line);
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .hero-grid,
+    .mattress-grid,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image-area {
+        max-width: 700px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .process-line {
+        width: 1px;
+
+        height: 35px;
+
+        margin: auto;
+    }
+
+    .cta-box {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 620px) {
+
+    .container {
+        width: min(100% - 36px, 1220px);
+    }
+
+    .header {
+        height: 74px;
+    }
+
+    nav {
+        top: 74px;
+    }
+
+    .logo-text strong {
+        font-size: 20px;
+    }
+
+    .logo-icon {
+        width: 39px;
+        height: 39px;
+    }
+
+    .hero {
+        padding: 58px 0 65px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-image-area {
+        height: 430px;
+    }
+
+    .hero-image {
+        inset: 0 0 30px 20px;
+    }
+
+    .floating-card {
+        left: 0;
+        bottom: 5px;
+    }
+
+    .numbers-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .numbers-grid > div {
+        border-bottom: 1px solid var(--line);
+    }
+
+    .section,
+    .mattress-section {
+        padding: 72px 0;
+    }
+
+    .section-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mattress-image,
+    .about-image {
+        height: 390px;
+    }
+
+    .mattress-image > img,
+    .about-image > img {
+        width: 92%;
+    }
+
+    .equipment-card {
+        width: 210px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+    }
+
+    .cta {
+        padding-bottom: 65px;
+    }
+
+    .cta-box {
+        padding: 35px 25px;
+    }
+
+    .cta-buttons {
+        width: 100%;
+    }
+
+    .cta-buttons .button {
+        width: 100%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        grid-column: auto;
+
+        flex-direction: column;
+
+        gap: 7px;
+    }
+}
