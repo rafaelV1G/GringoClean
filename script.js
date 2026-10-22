@@ -18,7 +18,7 @@
 //
 // NÃO coloque +, espaços ou hífen.
 
-const WHATSAPP_NUMBER = "5534999999999";
+const WHATSAPP_NUMBER = "553491483936";
 
 
 const DEFAULT_MESSAGE =
